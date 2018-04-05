@@ -28,6 +28,7 @@ components = ['intel-comp', 'intel-ccomp', 'intel-icc', 'intel-openmp', 'intel-i
 
 dontcreateinstalldir = 'True'
 
-license_file = HOME + '/licenses/intel/license.lic'
-
+modextravars = {
+	'INTEL_LICENSE_FILE': '7285@flexserver1.pfizer.com',
+}
 moduleclass = 'compiler'

@@ -21,4 +21,10 @@ dependencies = [
     ('imkl', compver, '', ('iimpi', version)),
 ]
 
+modluafooter = """
+family("Compiler")
+"""
+
 moduleclass = 'toolchain'
+
+

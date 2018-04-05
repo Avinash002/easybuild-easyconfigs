@@ -19,6 +19,10 @@ components = ['intel-mpi', 'intel-psxe', 'intel-imb']
 # set up all the mpi commands to default to intel compilers
 # set_mpi_wrappers_all = 'True'
 
+modluafooter = """
+family("MPI")
+"""
+
 postinstallcmds = [
     'ln -s %(installdir)s/lib64/libmpi.so  %(installdir)s/lib64/libmpich.so',
     'ln -s %(installdir)s/lib64/libmpigc4.so  %(installdir)s/lib64/libmpichcxx.so',
